@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d5b218350a44314d9f5274e59213d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  card: {fileID: 11400000, guid: ced4841e24b949845b084055036f37c6, type: 2}
+  card: {fileID: 11400000, guid: 51ff9a17fe660e34e91cf91585a0a0a6, type: 2}
   nameText: {fileID: 2869547353035984623}
   descriptionText: {fileID: 2869547353897504295}
   characterImage: {fileID: 2869547353662619974}
@@ -236,8 +236,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9abd0cac14bb3fc48b68d4a9ac17009b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cubePrefab: {fileID: 8556931549181722460, guid: d5ffc636b6c0a8144852d3dbc2d1998b, type: 3}
+  cubePrefab: {fileID: 3439701846882326991, guid: 4f902677040e7384694fc1891ad45e27, type: 3}
+  hologramPlayer: {fileID: 0}
   characterMask: {fileID: 2869547353662619974}
+  characterMaterial: {fileID: 2100000, guid: afe71a4acaa16fb4592e409903c55c18, type: 2}
 --- !u!1 &2869547353035984621
 GameObject:
   m_ObjectHideFlags: 0

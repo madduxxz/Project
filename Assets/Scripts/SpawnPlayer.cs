@@ -6,9 +6,11 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 public class SpawnPlayer : MonoBehaviour
 {
-    [SerializeField] GameObject cubePrefab = null;
+    [SerializeField] private GameObject cubePrefab = null;
 
+    [SerializeField] private GameObject hologramPlayer;
     [SerializeField] private Image characterMask;
+    [SerializeField] private Material characterMaterial;
     private Animation anim;
     private Camera cam = null;
     private bool buttonSelected = false;
@@ -38,21 +40,22 @@ public class SpawnPlayer : MonoBehaviour
     }
     public void SpawnAtMousePos()
     {
-        if(Mouse.current.leftButton.wasPressedThisFrame)    
-        {
-            Ray ray = cam.ScreenPointToRay(Mouse.current.position.ReadValue());
+                  
+            Ray ray = cam.ScreenPointToRay(Mouse.current.position.ReadValue()); 
             RaycastHit hit;
-
 
             if(Physics.Raycast(ray, out hit))
             {
+                hologramPlayer.transform.position = hit.point;
+                if(Mouse.current.leftButton.wasPressedThisFrame && buttonSelected){
                 Instantiate(cubePrefab, hit.point, Quaternion.identity);
+                butt.interactable = false;
+                characterMask.color = new Color(1f,1f,1f, 0.01f);
+                anim.Play("ButtonDeselect");
+                buttonSelected = false;
+                }
             }
-            buttonSelected = false;
-            butt.interactable = false;
-            characterMask.color = new Color(1f,1f,1f, 0.01f);
-            anim.Play("ButtonDeselect");
 
-        }
+
     }
 }
