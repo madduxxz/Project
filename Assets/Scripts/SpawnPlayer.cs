@@ -7,17 +7,17 @@ using UnityEngine.EventSystems;
 public class SpawnPlayer : MonoBehaviour
 {
     [SerializeField] GameObject cubePrefab = null;
-    [SerializeField] private Animation anim;
+
+    [SerializeField] private Image characterMask;
+    private Animation anim;
     private Camera cam = null;
-
-   
-
     private bool buttonSelected = false;
-    
+    private Button butt;
     
     private void Start(){
-
+        anim = GetComponentInParent<Animation>();
         cam = Camera.main;
+        butt = GetComponent<Button>();
         
     }
 
@@ -49,6 +49,8 @@ public class SpawnPlayer : MonoBehaviour
                 Instantiate(cubePrefab, hit.point, Quaternion.identity);
             }
             buttonSelected = false;
+            butt.interactable = false;
+            characterMask.color = new Color(1f,1f,1f, 0.01f);
             anim.Play("ButtonDeselect");
 
         }
