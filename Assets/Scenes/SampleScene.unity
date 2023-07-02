@@ -651,7 +651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5123151590948082078, guid: 89931bc443179be4aa0e848c2fb9c20f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 638
+      value: 314
       objectReference: {fileID: 0}
     - target: {fileID: 5123151590948082078, guid: 89931bc443179be4aa0e848c2fb9c20f, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -683,10 +683,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1254254103}
     m_Modifications:
+    - target: {fileID: 1930006239, guid: 89931bc443179be4aa0e848c2fb9c20f, type: 3}
+      propertyPath: card
+      value: 
+      objectReference: {fileID: 11400000, guid: ced4841e24b949845b084055036f37c6, type: 2}
+    - target: {fileID: 1930006239, guid: 89931bc443179be4aa0e848c2fb9c20f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 3439701846882326991, guid: 4f902677040e7384694fc1891ad45e27, type: 3}
+    - target: {fileID: 1930006239, guid: 89931bc443179be4aa0e848c2fb9c20f, type: 3}
+      propertyPath: hologramPlayer
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1522104490780211877, guid: 89931bc443179be4aa0e848c2fb9c20f, type: 3}
       propertyPath: m_Name
       value: Player1
       objectReference: {fileID: 0}
+    - target: {fileID: 2869547352201795835, guid: 89931bc443179be4aa0e848c2fb9c20f, type: 3}
+      propertyPath: card
+      value: 
+      objectReference: {fileID: 11400000, guid: ced4841e24b949845b084055036f37c6, type: 2}
     - target: {fileID: 5123151590948082078, guid: 89931bc443179be4aa0e848c2fb9c20f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -753,7 +769,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5123151590948082078, guid: 89931bc443179be4aa0e848c2fb9c20f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -323
       objectReference: {fileID: 0}
     - target: {fileID: 5123151590948082078, guid: 89931bc443179be4aa0e848c2fb9c20f, type: 3}
       propertyPath: m_AnchoredPosition.y
